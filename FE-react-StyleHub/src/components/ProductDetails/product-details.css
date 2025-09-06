@@ -1,0 +1,281 @@
+/* ProductDetails main */
+.product-page {
+  padding: 30px 0;
+}
+
+.product-page .main-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Gallery ảnh */
+.product-page .gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.product-page .gallery-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.product-page .gallery-img:hover {
+  border-color: #0f3460;
+}
+
+/* Product info */
+.product-page .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.product-page .info .price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0f3460;
+}
+
+.product-page .info span {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Variants */
+.product-page .variants {
+  margin: 20px 0;
+}
+
+.product-page .variants strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.product-page .variants ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.product-page .variants li {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Quantity + Add button */
+.product-page .qty-input {
+  width: 70px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.product-page button.add {
+  padding: 10px 20px;
+  background-color: #0f3460;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-page button.add:hover {
+  background-color: #16295f;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .product-page .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-page .gallery {
+    justify-content: start;
+  }
+}
+/* Sizes / Colors */
+.sizes,
+.colors {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px;
+  flex-wrap: wrap;
+}
+
+.size-btn,
+.color-btn {
+  padding: 8px 15px;
+  border: 1px solid #0f3460;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.size-btn.active,
+.color-btn.active {
+  background-color: #0f3460;
+  color: #fff;
+}
+
+.color-btn:disabled {
+  border-color: #ccc;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.gallery-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-img:hover {
+  border-color: #0f3460;
+}
+
+/* Quantity + Add */
+.qty-input {
+  width: 70px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+button.add {
+  padding: 10px 20px;
+  background-color: #0f3460;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.add:hover {
+  background-color: #16295f;
+}
+.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Toggle button */
+.size-suggest {
+  margin-top: 20px;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.toggle-suggest {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.toggle-suggest:hover {
+  background: #0056b3;
+}
+
+/* Suggestion form */
+.suggest-form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.3s ease;
+}
+
+.suggest-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.suggest-form input:focus {
+  border-color: #007bff;
+}
+
+.suggest-form button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.suggest-form button:hover {
+  background: #1e7e34;
+}
+
+/* Result */
+.suggest-result {
+  font-size: 15px;
+  margin-top: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.suggest-result strong {
+  color: #007bff;
+  font-size: 16px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

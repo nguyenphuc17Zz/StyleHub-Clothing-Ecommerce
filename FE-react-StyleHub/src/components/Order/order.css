@@ -1,0 +1,38 @@
+.orders-section {
+  padding: 40px 0;
+}
+
+.order-table th,
+.order-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.status-badge.approved {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.status-badge.rejected {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.detail-table .thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
